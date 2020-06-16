@@ -52,7 +52,7 @@ public class LoginMBean implements Serializable {
 
     public String sair() {
         UteisJsf.removeObjectSession("usuarioLogado");
-        return "login?faces-redirect=true";
+        return "cadUsuario?faces-redirect=true";
     }
 
     public String getUserName() {

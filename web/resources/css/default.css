@@ -61,7 +61,7 @@ a:link:hover, a:visited:hover  {
 
 
 .tabelaLinha1 {
-   background: #B5B5B5;
+   background: yellowgreen;
 }
 
 .tabelaLinha2 {
@@ -69,3 +69,10 @@ a:link:hover, a:visited:hover  {
 }
 
 
+
+.rodape {
+    align-items: center
+}
+.tabelaCpf{
+    text-align: center;
+}
