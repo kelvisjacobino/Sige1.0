@@ -8,7 +8,7 @@
             .container {
                 width: 100vw;
                 height: 100vh;
-                background: #6C7A89;
+                background: #e7ecf2;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
@@ -17,10 +17,18 @@
             .dvLogin {
                 width: 300px;
                 height: 300px;
-                background: #fff;
+                background:#94bedd;
+                border-radius: 10px;
             }
             body {
-                margin: 0px;
+                margin: 4px;
+                border-color: black;
+                color: #ffffff;
+                font-family: verdana;
+            }
+            .botao{
+                border-radius: 7px;
+                font-size: 12px;
             }
         </style>
     </h:head>
@@ -47,7 +55,7 @@
                             </h:panelGroup>
                         </h:panelGrid>
                         <br/>
-                        <h:commandButton value="Entrar" action="#{loginMBean.logar()}"/>
+                        <h:commandButton class="botao" value="Entrar" action="#{loginMBean.logar()}"/>
                         <br/>
                         <h:messages />
                     </center>

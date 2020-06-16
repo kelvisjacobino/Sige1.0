@@ -1,11 +1,12 @@
 
 #top {
     position: relative;
-    background-color: #036fab;
+    background-color: #80abc1;
     color: white;
     padding: 5px;
     margin: 0px 0px 10px 0px;
     align-content: center;
+    font-family: verdana;
 }
 
 #bottom {
@@ -17,7 +18,7 @@
 
 #left {
     float: left;
-    background-color: #ece3a5;
+    background-color: #94bedd;
     padding: 5px;
     width: 150px;
 }
@@ -33,18 +34,21 @@
     position: relative;
     background-color: #dddddd;
     padding: 5px;
+    
 }
 
 .left_content {
     background-color: #dddddd;
     padding: 5px;
     margin-left: 170px;
+    border-radius: 10px;
 }
 
 .right_content {
     background-color: #dddddd;
     padding: 5px;
     margin: 0px 170px 0px 170px;
+    border-radius: 10px;
 }
 
 #top a:link, #top a:visited {

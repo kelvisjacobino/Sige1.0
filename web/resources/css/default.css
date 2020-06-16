@@ -1,5 +1,5 @@
 body {
-    background-color: #ffffff;
+    background-color: #80abc1;
     font-size: 12px;
     font-family: Verdana, "Verdana CE",  Arial, "Arial CE", "Lucida Grande CE", lucida, "Helvetica CE", sans-serif;
     color: #000000;  
@@ -13,7 +13,7 @@ h1 {
     font-weight: bold;
     margin: 0px;
     padding: 0px;
-    color: #D20005;
+    color: whitesmoke;
 }
 
 a:link, a:visited {
@@ -61,7 +61,7 @@ a:link:hover, a:visited:hover  {
 
 
 .tabelaLinha1 {
-   background: yellowgreen;
+   background: #b3cdea;
 }
 
 .tabelaLinha2 {
@@ -71,7 +71,7 @@ a:link:hover, a:visited:hover  {
 
 
 .rodape {
-    align-items: center
+    align-items: center;
 }
 .tabelaCpf{
     text-align: center;
