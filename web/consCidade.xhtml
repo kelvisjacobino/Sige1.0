@@ -11,13 +11,14 @@
                 
         <h:form>            
             <h:panelGrid>
-                <h:commandButton value="Novo Cidade" 
+                <h:commandButton value="Nova Cidade" 
                                  action="#{cidadeMBean.botaoNovo()}"/>
             </h:panelGrid>
             <h:panelGrid columns="3">                
                 Nome
                 <h:inputText id="iTxtValorPesquisar" size="20" value="#{cidadeMBean.valorPesquisar}">
-                    <f:ajax listener="#{cidadeMBean.botaoPesquisar()}" execute="iTxtValorPesquisar" render="dtCidade" event="keyup"/>
+                    <f:ajax listener="#{cidadeMBean.botaoPesquisar()}" execute="iTxtValorPesquisar" 
+                            render="dtCidade" event="keyup"/>
                 </h:inputText>
                 <h:commandButton value="Pesquisar" action="#{cidadeMBean.botaoPesquisar()}" />
             </h:panelGrid>

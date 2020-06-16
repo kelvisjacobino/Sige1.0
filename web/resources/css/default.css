@@ -14,6 +14,7 @@ h1 {
     margin: 0px;
     padding: 0px;
     color: whitesmoke;
+    text-align:  center;
 }
 
 a:link, a:visited {
@@ -78,6 +79,10 @@ a:link:hover, a:visited:hover  {
 }
 
 .titulo {
+    align-items: center;
+
+}
+.telaNovoUsuario {
     align-items: center;
 
 }

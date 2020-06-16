@@ -11,7 +11,7 @@ import javax.faces.view.ViewScoped;
 import javax.inject.Named;
 import ControleUteis.UteisJsf;
 import ModeloEntidade.Usuario;
-import ModeloSesionBean.LogarSBean;
+import ModeloSessionBean.LogarSBean;
 
 /**
  *

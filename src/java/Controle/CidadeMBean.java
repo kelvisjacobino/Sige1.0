@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
-import ModeloSesionBean.CidadeSBean;
+import ModeloSessionBean.CidadeSBean;
 
 /**
  *

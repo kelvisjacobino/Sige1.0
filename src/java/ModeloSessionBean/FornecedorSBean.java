@@ -3,12 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ModeloSesionBean;
+package ModeloSessionBean;
+
+import javax.ejb.Stateless;
 
 /**
  *
  * @author Kelvis
  */
-public class ProdutoSBeam {
-    
+@Stateless
+public class FornecedorSBean {
+
+    // Add business logic below. (Right-click in editor and choose
+    // "Insert Code > Add Business Method")
 }

@@ -15,8 +15,8 @@ import javax.faces.context.FacesContext;
 import ControleConverter.CidadeConverter;
 import ModeloEntidade.Cidade;
 import ModeloEntidade.Cliente;
-import ModeloSesionBean.CidadeSBean;
-import ModeloSesionBean.ClienteSBean;
+import ModeloSessionBean.CidadeSBean;
+import ModeloSessionBean.ClienteSBean;
 
 /**
  *

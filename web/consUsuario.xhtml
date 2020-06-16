@@ -8,22 +8,24 @@
                 xmlns:f="http://xmlns.jcp.org/jsf/core">
 
     <ui:define name="content">
-                
+
         <h:form>            
             <h:messages showDetail="true"/>
             <h:panelGrid>
                 <h:commandButton value="Novo Usuario" 
                                  action="#{usuarioMBean.botaoNovo()}"/>
+                <h:panelGrid columns="3">                
+                    Nome
+                    <h:inputText id="iTxtValorPesquisar" size="20" value="#{usuarioMBean.valorPesquisar}">
+                        <f:ajax listener="#{usuarioMBean.botaoPesquisar()}" execute="iTxtValorPesquisar"
+                                render="dtCliente" event="keyup"/>
+                    </h:inputText>
+                    <h:commandButton value="Pesquisar" action="#{usuarioMBean.botaoPesquisar()}" />
+                </h:panelGrid>
             </h:panelGrid>
-            
-            <h:panelGrid columns="3">                
-                Nome
-                <h:inputText id="iTxtValorPesquisar" size="20" value="#{usuarioMBean.valorPesquisar}">
-                    <f:ajax listener="#{usuarioMBean.botaoPesquisar()}" execute="iTxtValorPesquisar" render="dtUsuario" event="keyup"/>
-                </h:inputText>
-               
-            </h:panelGrid>
-            
+
+
+
             <h:panelGrid>
 
                 <h:dataTable id="dtUsuario" value = "#{usuarioMBean.listaUsuario}" 
@@ -38,7 +40,7 @@
                             #{usuario.id}
                     </h:column>
                     <h:column>    				
-                        <f:facet name = "header">Name</f:facet>    				
+                        <f:facet name = "header">Nome</f:facet>    				
                             #{usuario.nome}
                     </h:column>
 
@@ -48,23 +50,22 @@
                     </h:column>
 
                     <h:column>
-                        <f:facet name = "header">User Name</f:facet>
+                        <f:facet name = "header">Nome de Usuario</f:facet>
                             #{usuario.userName}
                     </h:column>
-
                     <h:column>
                         <f:facet name = "header">Ações</f:facet>
-                        <h:commandButton value="Edit" action="#{usuarioMBean.botaoEditar()}">
+                        <h:commandButton value="Editar" action="#{usuarioMBean.botaoEditar()}">
                             <f:setPropertyActionListener  value="#{usuario}" target="#{usuarioMBean.usuario}" /> 
                         </h:commandButton>
-                        <h:commandButton value="Del" action="#{usuarioMBean.botaoExcluir()}" >
+                        <h:commandButton value="Deletar" action="#{usuarioMBean.botaoExcluir()}" >
                             <f:setPropertyActionListener value="#{usuario}" target="#{usuarioMBean.usuario}"/>
                         </h:commandButton>
                     </h:column>
                 </h:dataTable>
             </h:panelGrid>
-            
+
         </h:form>
-      </ui:define>
+    </ui:define>
 
 </ui:composition>

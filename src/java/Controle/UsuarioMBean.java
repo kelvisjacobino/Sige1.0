@@ -14,7 +14,7 @@ import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
 import javax.faces.view.ViewScoped;
 import ControleUteis.UteisJsf;
-import ModeloSesionBean.UsuarioSBean;
+import ModeloSessionBean.UsuarioSBean;
 
 /**
  *
@@ -65,6 +65,7 @@ public class UsuarioMBean implements Serializable {
     public void botaoExcluir() {
         try {
             usuarioSBean.excluir(usuario);
+            this.listaUsuario.remove(usuario);
             UteisJsf.addMensagemInfo("INFO: - ", "Usuario Excluido com sucesso.");
         } catch (Exception ex) {
             UteisJsf.addMensagemErro("ATENÇÃO: - ", ex.getMessage());

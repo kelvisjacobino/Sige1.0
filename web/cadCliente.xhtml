@@ -9,7 +9,7 @@
    
     <ui:define name="content">
         <h:form id="form">
-            <h1>Cadastro de Cliente</h1>
+            <h1>Cadastro de Clientes</h1>
             <br/>
             <h:messages />
             <h:panelGrid columns="2">
@@ -23,7 +23,7 @@
                     R.G.
                     <h:inputText id="iTxtRG" size="15" value="#{clienteMBean.cliente.rgInscEstadual}"/>
                 </h:panelGroup>
-                Data Nasc.
+                Data Nascimento
                 <h:inputText id="iTxtDataNascimento"  size="10" value="#{clienteMBean.cliente.dataNascimento}">
                     <f:convertDateTime locale="pt_BR" pattern="dd/MM/yyyy"/>
                 </h:inputText>
