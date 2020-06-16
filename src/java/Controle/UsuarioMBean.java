@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sige.controller;
+package Controle;
 
-import sige.modelo.entidade.Usuario;
+import ModeloEntidade.Usuario;
 import javax.inject.Named;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -13,8 +13,8 @@ import java.util.List;
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
 import javax.faces.view.ViewScoped;
-import sige.controller.uteis.UteisJsf;
-import sige.modelo.sessionbean.UsuarioSBean;
+import ControleUteis.UteisJsf;
+import ModeloSesionBean.UsuarioSBean;
 
 /**
  *

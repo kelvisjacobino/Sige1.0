@@ -3,15 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sige.controller;
+package Controle;
 
 import java.io.Serializable;
 import javax.ejb.EJB;
 import javax.faces.view.ViewScoped;
 import javax.inject.Named;
-import sige.controller.uteis.UteisJsf;
-import sige.modelo.entidade.Usuario;
-import sige.modelo.sessionbean.LogarSBean;
+import ControleUteis.UteisJsf;
+import ModeloEntidade.Usuario;
+import ModeloSesionBean.LogarSBean;
 
 /**
  *

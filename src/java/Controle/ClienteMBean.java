@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sige.controller;
+package Controle;
 
 import javax.inject.Named;
 import javax.enterprise.context.SessionScoped;
@@ -12,11 +12,11 @@ import java.util.List;
 import javax.ejb.EJB;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
-import sige.controller.converter.CidadeConverter;
-import sige.modelo.entidade.Cidade;
-import sige.modelo.entidade.Cliente;
-import sige.modelo.sessionbean.CidadeSBean;
-import sige.modelo.sessionbean.ClienteSBean;
+import ControleConverter.CidadeConverter;
+import ModeloEntidade.Cidade;
+import ModeloEntidade.Cliente;
+import ModeloSesionBean.CidadeSBean;
+import ModeloSesionBean.ClienteSBean;
 
 /**
  *

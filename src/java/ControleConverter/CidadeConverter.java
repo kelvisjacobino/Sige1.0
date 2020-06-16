@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sige.controller.converter;
+package ControleConverter;
 
 
 
@@ -11,8 +11,8 @@ import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.convert.Converter;
 import javax.faces.convert.FacesConverter;
-import sige.modelo.entidade.Cidade;
-import sige.modelo.sessionbean.CidadeSBean;
+import ModeloEntidade.Cidade;
+import ModeloSesionBean.CidadeSBean;
 
 
 /**

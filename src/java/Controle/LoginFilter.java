@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sige.controller;
+package Controle;
 
 import java.io.IOException;
 import javax.servlet.Filter;
@@ -15,7 +15,7 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import sige.modelo.entidade.Usuario;
+import ModeloEntidade.Usuario;
 
 /**
  *

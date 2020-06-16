@@ -5,6 +5,7 @@
     color: white;
     padding: 5px;
     margin: 0px 0px 10px 0px;
+    align-content: center;
 }
 
 #bottom {
@@ -62,3 +63,5 @@
     width: 100%;
     height: 400px;
 }
+
+

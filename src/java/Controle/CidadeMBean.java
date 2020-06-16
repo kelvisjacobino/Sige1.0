@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sige.controller;
+package Controle;
 
-import sige.modelo.entidade.Cidade;
+import ModeloEntidade.Cidade;
 import javax.inject.Named;
 import javax.enterprise.context.SessionScoped;
 import java.io.Serializable;
@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
-import sige.modelo.sessionbean.CidadeSBean;
+import ModeloSesionBean.CidadeSBean;
 
 /**
  *

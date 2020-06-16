@@ -3,17 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sige.modelo.sessionbean;
-
-import javax.ejb.Stateless;
+package ModeloSesionBean;
 
 /**
  *
  * @author Kelvis
  */
-@Stateless
-public class FornecedorSBean {
-
-    // Add business logic below. (Right-click in editor and choose
-    // "Insert Code > Add Business Method")
+public class ProdutoSBeam {
+    
 }

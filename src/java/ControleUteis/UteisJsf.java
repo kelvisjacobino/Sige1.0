@@ -1,4 +1,4 @@
-package sige.controller.uteis;
+package ControleUteis;
 
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;

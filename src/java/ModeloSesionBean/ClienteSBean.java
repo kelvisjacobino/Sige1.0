@@ -3,15 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sige.modelo.sessionbean;
+package ModeloSesionBean;
 
 import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
-import sige.modelo.entidade.Cidade;
-import sige.modelo.entidade.Cliente;
+import ModeloEntidade.Cidade;
+import ModeloEntidade.Cliente;
 
 /**
  *
