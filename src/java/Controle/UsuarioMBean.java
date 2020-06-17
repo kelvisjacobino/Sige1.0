@@ -32,6 +32,8 @@ public class UsuarioMBean implements Serializable {
     public UsuarioMBean() {
 
     }
+    
+    
 
     @PostConstruct
     public void init() {
@@ -47,7 +49,7 @@ public class UsuarioMBean implements Serializable {
     public void botaoSalvar() {
         try {
             usuarioSBean.salvar(usuario);
-            UteisJsf.addMensagemInfo("INFO: - ", "Usuario Salvo com sucesso.");
+            UteisJsf.addMensagemInfo("INFO: - ", "Usuário Salvo com sucesso.");
             usuario = new Usuario();
         } catch (Exception ex) {
             UteisJsf.addMensagemErro("ATENÇÃO: - ", ex.getMessage());           
@@ -62,7 +64,7 @@ public class UsuarioMBean implements Serializable {
         try {
             usuarioSBean.excluir(usuario);
             this.listaUsuario.remove(usuario);
-            UteisJsf.addMensagemInfo("INFO: - ", "Usuario Excluido com sucesso.");
+            UteisJsf.addMensagemInfo("INFO: - ", "Usuário Excluído com sucesso.");
         } catch (Exception ex) {
             UteisJsf.addMensagemErro("ATENÇÃO: - ", ex.getMessage());
         }

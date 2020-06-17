@@ -46,7 +46,7 @@ public class UsuarioSBean {
             Usuario usuarioBD = (Usuario) consulta.getSingleResult();
             if (usuarioBD != null) {
                 if (!usuarioValidar.equals(usuarioBD)) {
-                    throw new Exception("Usuario já existe.");
+                    throw new Exception("Usuário já existe.");
                 }
             }
         } catch (NoResultException rex) {
@@ -59,18 +59,18 @@ public class UsuarioSBean {
     public void excluir(Usuario usuario) throws Exception {
         try {
             em.remove(em.find(Usuario.class, usuario.getId()));
-        } catch (Exception ex) {
-            throw new Exception("Não foi possivel excluir o usuario.");
+        } catch (Exception rex) {
+            throw new Exception("Não foi possivel excluir o usuário.");
         }
     }
 
     public Usuario pesquisar(Long id) throws Exception {
         try {
             return em.find(Usuario.class, id);
-        } catch (IllegalArgumentException ex) {
+        } catch (IllegalArgumentException rex) {
             throw new Exception("Valor pesquisado invalido.");
         } catch (Exception ex) {
-            throw new Exception("Ocorreu um erro ao pesquisar o id do usuario.");
+            throw new Exception("Ocorreu um erro ao pesquisar o id do usuário.");
         }
     }
 
