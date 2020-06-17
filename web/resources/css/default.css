@@ -72,7 +72,7 @@ a:link:hover, a:visited:hover  {
 
 
 .rodape {
-    align-items: center;
+    align-items:baseline;
 }
 .tabelaCpf{
     text-align: center;

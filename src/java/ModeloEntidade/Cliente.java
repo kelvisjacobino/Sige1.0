@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ModeloEntidade;
 
 import java.io.Serializable;
@@ -32,8 +28,8 @@ import javax.persistence.TemporalType;
             query = "SELECT c FROM Cliente c WHERE c.nome LIKE :nome ORDER BY c.nome"
     ),
     @NamedQuery(
-            name = "Cliente.findByCpfCnpj",
-            query = "SELECT c FROM Cliente c WHERE c.cpfCnpj = :cpfCnpj"
+            name = "Cliente.findByCpfCnpf",
+            query = "SELECT c FROM Cliente c WHERE c.cpfCnpf = :CpfCnpf"
     ),
     @NamedQuery(
             name = "Cliente.findByCidadeNome",
@@ -42,7 +38,8 @@ import javax.persistence.TemporalType;
     @NamedQuery(
             name = "Cliente.pesquisarPorCidade",
             query = "SELECT c FROM Cliente c WHERE c.cidade = :cidade"
-    )
+    ),
+    
 })
 public class Cliente implements Serializable {
 
@@ -52,8 +49,8 @@ public class Cliente implements Serializable {
     private Long id;    
     @Column(name = "nome", length = 100, nullable = false)
     private String nome;
-    @Column(name = "cpf_cnpf", length = 18, nullable = false, unique = true)
-    private String cpfCnpj;
+    @Column(name = "cpf_Cnpf", length = 18, nullable = false, unique = true)
+    private String cpfCnpf;
     @Column(name = "rg_insc_estadual", length = 15)
     private String rgInscEstadual;
     @Column(name = "data_nascimento")
@@ -91,13 +88,16 @@ public class Cliente implements Serializable {
         this.nome = nome.toUpperCase();
     }
 
-    public String getCpfCnpj() {
-        return cpfCnpj;
+    public String getCpfCnpf() {
+        return cpfCnpf;
     }
 
-    public void setCpfCnpj(String cpfCnpj) {
-        this.cpfCnpj = cpfCnpj;
+    public void setCpfCnpf(String cpfCnpf) {
+        this.cpfCnpf = cpfCnpf;
     }
+
+ 
+   
 
     public String getRgInscEstadual() {
         return rgInscEstadual;

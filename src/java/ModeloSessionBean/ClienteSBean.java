@@ -78,14 +78,14 @@ public class ClienteSBean {
         }
     }
 
-    public Cliente pesquisarPorCpfCnpj(String cpfCnpj) throws Exception {
+    public Cliente pesquisarPorCpf(String cpf) throws Exception {
         try {
             Query consulta = em.createNamedQuery("Cliente.findByCpfCnpj");
-            consulta.setParameter("nome", cpfCnpj);
+            consulta.setParameter("nome", cpf);
             return (Cliente) consulta.getSingleResult();
         } catch (Exception ex) {
-            throw new Exception("Erro ao pesquisar o cliente por CPF/CNPJ. " + ex.getMessage());
+            throw new Exception("Erro ao pesquisar o cliente por CPF/Cnpj. " + ex.getMessage());
         }
     }
-
+     
 }

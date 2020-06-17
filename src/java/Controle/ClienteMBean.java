@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Controle;
 
 import javax.inject.Named;
@@ -74,24 +70,19 @@ public class ClienteMBean implements Serializable {
     public void botaoExcluir() {
         try {
             clienteSBean.excluir(cliente);
-            /*se excluir do banco já removo o objeto da lista que ele vai atualizar o dataTable*/
             this.listaCliente.remove(cliente);
         } catch (Exception ex) {
 
             FacesMessage fmsg = new FacesMessage(FacesMessage.SEVERITY_ERROR,
                     "Erro Excluir", "Error ao excluir cliente. " + ex.getMessage());
-            /*a mensagem não foi mostrada na tela por que não tinha passado para FacesContext.getCurrentiInstance()
-             */
+           
             FacesContext.getCurrentInstance().addMessage(null, fmsg);
         }
     }
 
     public void botaoPesquisar() {
         try {
-            /*
-            Ontem na aula não estava mostrando por que não tinha passado o resultado da
-            pesquisa para a listaCliente
-             */
+          
             this.listaCliente = clienteSBean.pesquisar(valorPesquisar);
         } catch (Exception ex) {
             FacesContext.getCurrentInstance().addMessage(null,

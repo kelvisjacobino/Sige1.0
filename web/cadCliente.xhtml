@@ -9,19 +9,18 @@
    
     <ui:define name="content">
         <h:form id="form">
-            <h1>Cadastro de Clientes</h1>
+            <p id="cadCliente">Cadastro de Clientes</p>
             <br/>
             <h:messages />
             <h:panelGrid columns="2">
                
                 Nome                
                 <h:inputText id="iTxtNome" size="50" value="#{clienteMBean.cliente.nome}"/>                
-                CPF/CNPJ
-                <h:panelGroup>
-                    <h:inputText id="iTxtCpfCnpj"  size="15" maxlength="14" value="#{clienteMBean.cliente.cpfCnpj}"/>                        
-                    R.G.
-                    <h:inputText id="iTxtRG" size="15" value="#{clienteMBean.cliente.rgInscEstadual}"/>
-                </h:panelGroup>
+                CNPJ
+                <h:inputText id="iTxtCpfCnpf"  size="18" maxlength="14" value="#{clienteMBean.cliente.cpfCnpf}"/>
+               
+               Inscrição Estadual
+               <h:inputText id="iTxtRG" size="15" value="#{clienteMBean.cliente.rgInscEstadual}"/>     
                 Data Nascimento
                 <h:inputText id="iTxtDataNascimento"  size="10" value="#{clienteMBean.cliente.dataNascimento}">
                     <f:convertDateTime locale="pt_BR" pattern="dd/MM/yyyy"/>
