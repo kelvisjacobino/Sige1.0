@@ -18,14 +18,14 @@
 
 #left {
     float: left;
-    background-color: #94bedd;
+    background-color: #80abc1;
     padding: 5px;
     width: 150px;
 }
 
 #right {
     float: right;
-    background-color: #ece3a5;
+    background-color: #80abc1;
     padding: 5px;
     width: 150px;
 }
@@ -42,6 +42,8 @@
     padding: 5px;
     margin-left: 170px;
     border-radius: 10px;
+    width: 100%;
+    height: 400px;
 }
 
 .right_content {
@@ -73,6 +75,8 @@
 
 .rodape{
     text-align: center;
+    position: relative;
+    align-items:center;
 }
 .cadCliente {
 /*    text-align: center;*/
@@ -104,6 +108,23 @@
 
 }
 
-#cadUsuario {
+
+
+.menu {
+    background:  #80abc1;
+    border: none;
+    
 
 }
+
+.linha1 {
+    background: #80abc1;
+    padding: 6px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+
+
+

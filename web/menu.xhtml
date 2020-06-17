@@ -4,18 +4,20 @@
 
     <h:form>
         <h1>Menu</h1>
+        <div class="menu">
         <dl>
-            <dt><h:commandLink value="Home" 
-                     action="home?faces-redirect=true"/></dt>
-            <dt><h:commandLink value="Usuario" 
-                     action="consUsuario?faces-redirect=true"/></dt>
-            <dt><h:commandLink value="Cidade" 
-                     action="consCidade?faces-redirect=true"/></dt>
-            <dt><h:commandLink value="Cliente" 
-                     action="consCliente?faces-redirect=true"/></dt>
-            <dt><h:commandLink value="Sair" 
-                               action="#{loginMBean.sair()}"/></dt>
+            <div class="linha1"> <dt><h:commandLink value="Home" 
+                                action="home?faces-redirect=true"/></dt></div>
+            <div class="linha1"><dt><h:commandLink value="Usuario" 
+                                action="consUsuario?faces-redirect=true"/></dt></div>
+            <div class="linha1"><dt><h:commandLink value="Cidade" 
+                       action="consCidade?faces-redirect=true"/></dt></div>
+            <div class="linha1"><dt><h:commandLink value="Cliente" 
+                       action="consCliente?faces-redirect=true"/></dt></div>
+            <div class="linha1"><dt><h:commandLink value="Sair" 
+                        action="#{loginMBean.sair()}"/></dt></div>
         </dl>
+            </div>
     </h:form>
 
 </ui:composition>

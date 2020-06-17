@@ -9,7 +9,7 @@ body {
 h1 {
     font-family: Arial, "Arial CE", "Lucida Grande CE", lucida, "Helvetica CE", sans-serif;
     border-bottom: 1px solid #AFAFAF; 
-    font-size:  16px;
+    font-size:  18px;
     font-weight: bold;
     margin: 0px;
     padding: 0px;
@@ -35,10 +35,13 @@ a:link:hover, a:visited:hover  {
 
 .tabelaCabecalho {
    text-align:center;
-   font: 14px Arial, sans-serif;
+   font: 16px Arial, sans-serif;
    font-weight: bold;
    color: snow;
    background: black;
+   width: 150px;
+   
+
 }
 
 .tabelaColunaId {
@@ -84,5 +87,17 @@ a:link:hover, a:visited:hover  {
 }
 .telaNovoUsuario {
     align-items: center;
+
+}
+
+.fab {
+
+}
+
+.fa-twitter {
+
+}
+
+.fa-github-square {
 
 }
